@@ -41,4 +41,11 @@ for (let index = 0; index < squadre.length; index++) {
 
 }
 
-console.log(squadre)
+const squadreSenzaPunti = squadre.map(squadre => {
+  return {
+    nome: squadre.nome, 
+    falliSubiti:squadre.falliSubiti,   
+  };
+});
+
+console.log(squadreSenzaPunti);
