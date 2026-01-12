@@ -29,14 +29,13 @@ const bici = [
 
 
 function comparazionePeso (array){
+    let result=array[0];
     for (let index = 0; index < array.length; index++) {
-        
-        let result=array[0];
-        if(result.peso < array[index.peso]){
+        if(result.peso > array[index].peso){
         result=array[index];
     }
     }
-return
+return result
 }
 
 console.log(comparazionePeso(bici));
